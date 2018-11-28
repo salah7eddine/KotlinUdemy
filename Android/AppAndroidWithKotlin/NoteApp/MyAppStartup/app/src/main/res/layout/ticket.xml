@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_margin="3pt"
+        android:background="@drawable/background_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="14/07/1993"
+            android:textSize="10pt" />
+
+        <TextView
+            android:paddingLeft="10pt"
+            android:id="@+id/tvDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dans l’attente de votre retour, je vous remercie par avance de l’attention que vous avez porté à ma candidature et vous prie d’accepter, Monsieur, l’expression de mes salutations respectueuses.   " />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/ivEdit"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_marginRight="10pt"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_edit_black_18dp" />
+
+            <ImageView
+                android:id="@+id/ivDelete"
+                android:layout_width="40pt"
+                android:layout_height="40pt"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/baseline_delete_black_18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
